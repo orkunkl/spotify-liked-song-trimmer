@@ -12,6 +12,14 @@ plugins:
 
 functions:
   main:
-    handler: ./main.go # or just "./functions/example"
+    handler: ./functions/main/main.go
     events:
-      - schedule: rate(1 day)
+      - schedule:
+          rate: rate(1 day)
+          enabled: false
+  test:
+    handler: ./functions/test/main.go
+    events:
+      - http:
+          path: test
+          method: get
