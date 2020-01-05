@@ -11,5 +11,7 @@ plugins:
   - serverless-go-plugin
 
 functions:
-  example:
+  main:
     handler: ./main.go # or just "./functions/example"
+    events:
+      - schedule: rate(1 day)
