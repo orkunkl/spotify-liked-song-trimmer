@@ -1,0 +1,15 @@
+service: spotify-liked-song-trimmer
+
+frameworkVersion: '>=1.52.0 <2.0.0'
+
+provider:
+  name: aws
+  runtime: go1.x
+  region: eu-central-1
+
+plugins:
+  - serverless-go-plugin
+
+functions:
+  example:
+    handler: ./main.go # or just "./functions/example"
