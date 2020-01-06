@@ -1,0 +1,24 @@
+{
+  "name": "spotify-liked-song-trimmer",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "serverless-go-plugin": "^1.5.0",
+    "serverless-offline": "^5.12.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orkunkl/spotify-liked-song-trimmer.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orkunkl/spotify-liked-song-trimmer/issues"
+  },
+  "homepage": "https://github.com/orkunkl/spotify-liked-song-trimmer#readme"
+}

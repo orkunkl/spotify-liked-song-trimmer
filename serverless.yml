@@ -9,6 +9,7 @@ provider:
 
 plugins:
   - serverless-go-plugin
+  - serverless-offline
 
 functions:
   main:
