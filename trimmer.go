@@ -21,13 +21,16 @@ func Handler(ctx context.Context , event events.CloudWatchEvent) (*Response, err
 		Body:       result,
 	}, nil
 }
-func TestHandler() (*Response, error) {
+func TestHandler() (Response, error) {
 	result, err := trim()
 	if err != nil {
-		return nil, err
+		return Response{
+			StatusCode: 500,
+			Body: 1,
+		}, err
 	}
 
-	return &Response{
+	return Response{
 		StatusCode: 200,
 		Body:       result,
 	}, nil
